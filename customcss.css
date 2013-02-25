@@ -1,0 +1,205 @@
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+
+If you need any further help, ask in the CSS Customization forum.
+*/
+
+
+
+
+
+/* ------ HTML Elements ------ */
+
+/* Dark Theme adjustment */
+.highlander-dark hr {
+	background: #626262;
+}
+
+.highlander-dark a:link {
+	color: #F6F6F6;
+}
+
+.highlander-dark a:hover {
+	color: #ffffff;
+}
+
+/* ------ End of HTML Elements ------ */
+
+
+
+
+
+/* ------ Headers ------*/
+
+#site-intro {
+	margin-top: 14px;
+}
+
+.single h1.entry-title, .page h1.entry-title, .archive h1.page-title, .error404 h1.entry-title {
+	margin-top: 15px;
+	padding-bottom: .6em;
+	font-size: 2em;
+	color: rgb(100,100,100);
+}
+
+h1.page-title, h1.entry-title {
+	border-bottom: 5px solid rgb(105,105,105);
+}
+
+/* ------ End of Headers ------ */
+
+
+
+
+
+/* ------ Images ------ */
+
+img#wpstats {
+	width: 0;
+	height: 0;
+	padding: 0;
+	border: none;
+	overflow: hidden;
+}
+
+.list .portfolio .thumb {
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+
+.list .portfolio .thumb:hover {
+	opacity: .8;
+}
+
+.bordered {
+	border: 1px solid #ddd;
+}
+
+/* ------ End of Images ------ */
+
+
+
+
+
+/* ------ Customizing of Shortcode Archive Views ------ */
+
+.display-posts-listing {
+	clear: both;
+	margin-bottom: 10px;
+	min-height: 400px;
+}
+
+.display-posts-listing img {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+
+.display-posts-listing img:hover {
+	opacity: .8;
+}
+
+/* ------ End of Customizing of Shortcode Archive Views ------ */
+
+
+
+
+
+/* ------ My Gear Bag pages customizations ------ */
+
+.page-id-246 ul.breadcrumb {
+	display: none;
+}
+
+/* ------ My Gear Bag pages customizations ------ */
+
+
+
+
+
+/* ------ Footer ------ */
+
+#footer-widgets .post-date {
+	font-style: italic;
+}
+
+#footer-widgets .post-date:before {
+	content: " - ";
+}
+
+#widget-1 li {
+	padding-bottom: 1em;
+}
+
+.tweets li {
+	padding-bottom: 1em;
+}
+
+.tweets .timesince {
+	font-style: italic;
+}
+
+#site-generator:before {
+	content: "© Copyright Bruce Dorn and brucedorn.com, 2013. All Rights Reserved. ";
+}
+
+/* ------ End of Footer ------ */
+
+
+
+
+
+/* ------ Media Queries ------ */
+
+@media screen and (min-width: 900px) {
+	
+	.single-post .entry-content p, .page .entry-content p {
+		font-size: 18px;
+		line-height: 32px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		margin: 0;
+	}
+	
+	#access {
+		margin-bottom: 1.2em;
+	}
+	
+	.widget-area .widget_search input {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	img.alignright {
+		margin: 0 0 10px 0;
+		float: none;
+		display: block;
+	}
+	
+	img.alignleft {
+		margin: 0 0 10px 0;
+		float: none;
+		display: block;
+	}
+}
+
+/* ------ End of Media Queries ------ */
