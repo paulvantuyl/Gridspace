@@ -120,9 +120,9 @@ img#wpstats {
 .display-posts-listing .listing-item a.title {
 	display: block;
 	margin-bottom: 1em;
+	font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
-	font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
 	line-height: 1.3;
 }
 
