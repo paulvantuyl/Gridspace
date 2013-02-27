@@ -17,20 +17,25 @@ If you need any further help, ask in the CSS Customization forum.
 
 
 
+/*
+Gridspace Theme Customization Stylesheet http://graphpaperpress.com/
+
+Author: Paul Van Tuyl http://paulvantuyl.com
+
+I know a lot of these declarations are overqualified.
+In every case they were necessary as this is a theme override stylesheet.
+*/
+
+
+
+
+
 /* ------ HTML Elements ------ */
 
-/* Dark Theme adjustment */
-.highlander-dark hr {
-	background: #626262;
-}
-
-.highlander-dark a:link {
-	color: #F6F6F6;
-}
-
-.highlander-dark a:hover {
-	color: #ffffff;
-}
+/* Dark Theme adjustments/overrides */
+.highlander-dark hr      { background: #626262; }
+.highlander-dark a:link  { color: #F6F6F6; }
+.highlander-dark a:hover { color: #ffffff; }
 
 /* ------ End of HTML Elements ------ */
 
@@ -40,18 +45,16 @@ If you need any further help, ask in the CSS Customization forum.
 
 /* ------ Headers ------*/
 
-#site-intro {
-	margin-top: 14px;
-}
+#site-intro { margin-top: 14px; }
 
-.single h1.entry-title, .page h1.entry-title, .archive h1.page-title, .error404 h1.entry-title {
+.single h1.entry-title,
+.page h1.entry-title,
+.archive h1.page-title,
+.error404 h1.entry-title {
 	margin-top: 15px;
 	padding-bottom: .6em;
 	font-size: 2em;
 	color: rgb(100,100,100);
-}
-
-h1.page-title, h1.entry-title {
 	border-bottom: 5px solid rgb(105,105,105);
 }
 
@@ -73,18 +76,13 @@ img#wpstats {
 
 .list .portfolio .thumb {
 	-webkit-transition: opacity .3s ease-in-out;
-	-moz-transition: opacity .3s ease-in-out;
-	-o-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
+	   -moz-transition: opacity .3s ease-in-out;
+	     -o-transition: opacity .3s ease-in-out;
+	        transition: opacity .3s ease-in-out;
 }
 
-.list .portfolio .thumb:hover {
-	opacity: .8;
-}
-
-.bordered {
-	border: 1px solid #ddd;
-}
+.list .portfolio .thumb:hover { opacity: .8; }
+.bordered                     { border: 1px solid #ddd; }
 
 /* ------ End of Images ------ */
 
@@ -104,14 +102,12 @@ img#wpstats {
 	float: left;
 	margin: 0 1.5em 1.5em 0;
 	-webkit-transition: opacity .3s ease-in-out;
-	-moz-transition: opacity .3s ease-in-out;
-	-o-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
+	   -moz-transition: opacity .3s ease-in-out;
+	     -o-transition: opacity .3s ease-in-out;
+	        transition: opacity .3s ease-in-out;
 }
 
-.display-posts-listing img:hover {
-	opacity: .8;
-}
+.display-posts-listing img:hover { opacity: .8; }
 
 .display-posts-listing .listing-item {
 	display: block;
@@ -122,12 +118,12 @@ img#wpstats {
 }
 
 .display-posts-listing .listing-item a.title {
+	display: block;
+	margin-bottom: 1em;
 	font-size: 1.5em;
 	font-weight: bold;
 	font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
 	line-height: 1.3;
-	display: block;
-	margin-bottom: 1em;
 }
 
 .display-posts-listing .listing-item .excerpt-dash {
@@ -142,9 +138,7 @@ img#wpstats {
 
 /* ------ My Gear Bag pages customizations ------ */
 
-.page-id-246 ul.breadcrumb {
-	display: none;
-}
+.page-id-246 ul.breadcrumb { display: none; }
 
 /* ------ My Gear Bag pages customizations ------ */
 
@@ -154,29 +148,12 @@ img#wpstats {
 
 /* ------ Footer ------ */
 
-#footer-widgets .post-date {
-	font-style: italic;
-}
-
-#footer-widgets .post-date:before {
-	content: " - ";
-}
-
-#widget-1 li {
-	padding-bottom: 1em;
-}
-
-.tweets li {
-	padding-bottom: 1em;
-}
-
-.tweets .timesince {
-	font-style: italic;
-}
-
-#site-generator:before {
-	content: "© Copyright Bruce Dorn and brucedorn.com, 2013. All Rights Reserved. ";
-}
+#footer-widgets .post-date        { font-style: italic; }
+#footer-widgets .post-date:before { content: " - "; }
+#widget-1 li                      { padding-bottom: 1em; }
+.tweets li                        { padding-bottom: 1em; }
+.tweets .timesince                { font-style: italic; }
+#site-generator:before            { content: "© Copyright Bruce Dorn and brucedorn.com, 2013. All Rights Reserved. "; }
 
 /* ------ End of Footer ------ */
 
@@ -187,39 +164,25 @@ img#wpstats {
 /* ------ Media Queries ------ */
 
 @media screen and (min-width: 900px) {
-	
-	.single-post .entry-content p, .page .entry-content p {
+	.single-post .entry-content p,
+	.page .entry-content p {
 		font-size: 18px;
 		line-height: 32px;
-	}
-	
+	}	
 }
 
 @media screen and (max-width: 768px) {
-	body {
-		margin: 0;
-	}
-	
-	#access {
-		margin-bottom: 1.2em;
-	}
-	
-	.widget-area .widget_search input {
-		float: none;
-	}
+	body                              { margin: 0; }	
+	#access                           { margin-bottom: 1.2em; }
+	.widget-area .widget_search input { float: none; }
 }
 
 @media screen and (max-width: 520px) {
+	img.alignleft,
 	img.alignright {
-		margin: 0 0 10px 0;
-		float: none;
 		display: block;
-	}
-	
-	img.alignleft {
-		margin: 0 0 10px 0;
 		float: none;
-		display: block;
+		margin: 0 0 10px 0;		
 	}
 }
 
