@@ -153,7 +153,7 @@ img#wpstats {
 #widget-1 li                      { padding-bottom: 1em; }
 .tweets li                        { padding-bottom: 1em; }
 .tweets .timesince                { font-style: italic; }
-#site-generator:before            { content: "© Copyright Bruce Dorn and brucedorn.com, 2013. All Rights Reserved. "; }
+#site-generator:before            { content: "© Copyright Notice Goes Here, Year. All Rights Reserved. "; }
 
 /* ------ End of Footer ------ */
 
